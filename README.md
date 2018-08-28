@@ -1,6 +1,6 @@
 # Laravel Language Tags
 ## Usage
-Simply run the python script main.py using a Python 3.6+ interpreter.
+Simply run the python script main.py using a Python 2.7+ interpreter.
 
 Provide a project location of your laravel installation, this script will scan all files in /resources/views for language tags.
 After scanning they will be saved in the /resources/lang/XX folder, using respective provided country codes, according to Laravel's lang file format.
