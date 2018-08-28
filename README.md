@@ -9,4 +9,4 @@ After scanning they will be saved in the /resources/lang/XX folder, using respec
 This script will override any existing language folders and files, so make sure you have a backup of existing language files.
 
 ## Contributing to this project
-Contributing to this project is encouraged! Edit it to your own liking or request futures for the script.
+Contributing to this project is encouraged! Edit it to your own liking or request features for the script.
