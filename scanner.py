@@ -4,6 +4,7 @@ import re
 class Scanner:
     project_path = ''
     scanner_path = ''
+    language_path = ''
     export_type = ''
     languages = ['en', 'nl', 'fr', 'de']
     language_tags = {}
@@ -13,6 +14,8 @@ class Scanner:
         self.get_languages()
         self.check_export_format()
         self.scanner_path = self.project_path + '/resources/views'
+        self.language_path = self.project_path + '/resources/lang'
+
         print('Scanning files for @lang tags ...')
         self.scan_files(self.scanner_path)
         print('Exporting ...')
@@ -106,7 +109,7 @@ class Scanner:
         # Loop over languages
         for language in self.languages:
             # Set dir_path for each language
-            dir_path = '/Users/diff/test-laravel-scan/' + language
+            dir_path = self.language_path + '/' + language
             print('Create files in: ' + dir_path + ' ...')
 
             # Loop over dictionary
